@@ -1,5 +1,5 @@
-#include <cstdlib> // Untuk rand() dan srand()
-#include <ctime>   // Untuk time()
+#include <cstdlib> 
+#include <ctime>  
 
 // Sertakan header Emscripten jika sedang mengompilasi untuk web
 #ifdef __EMSCRIPTEN__
@@ -14,7 +14,7 @@
 #define EXPORT
 #endif
 
-// Variabel global untuk menyimpan status permainan
+// Variabel untuk menyimpan status permainan
 int secretNumber;
 int maxGuesses;
 int remainingGuesses;
@@ -25,7 +25,7 @@ extern "C" {
 EXPORT void startGame(int max_guesses) {
     // Inisialisasi generator angka acak
     srand(time(NULL));
-    secretNumber = rand() % 100 + 1; // Angka acak antara 1 dan 100
+    secretNumber = rand() % 100 + 1; // Angka acak dari 1 hinnga 100
     maxGuesses = max_guesses;
     remainingGuesses = maxGuesses;
 }
@@ -62,4 +62,4 @@ EXPORT int getSecretNumber() {
     return secretNumber;
 }
 
-} // extern "C"
+} 

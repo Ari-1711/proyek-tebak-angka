@@ -30,7 +30,7 @@ body {
     transform: translateY(-5px);
 }
 
-/* Title and Paragraph Styling */
+
 h1 {
     color: #4a4a4a;
     margin-bottom: 10px;
@@ -99,7 +99,6 @@ button {
     box-shadow: 0 6px 20px rgba(0, 184, 148, 0.5);
 }
 
-/* Feedback Area Styling */
 #feedback {
     font-size: 1.2em;
     font-weight: 600;
@@ -108,11 +107,11 @@ button {
 }
 
 .correct {
-    color: #00b894; /* Green */
+    color: #00b894; 
 }
 
 .wrong {
-    color: #d63031; /* Red */
+    color: #d63031; 
 }
 
 /* Remaining Guesses Styling */

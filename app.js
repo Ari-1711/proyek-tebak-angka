@@ -1,15 +1,12 @@
-// Tunggu hingga modul WebAssembly (game.js) selesai dimuat
+
 Module.onRuntimeInitialized = () => {
     console.log("Runtime C++ (Wasm) berhasil dimuat.");
-
-    // Ambil elemen-elemen dari HTML
     const guessInput = document.getElementById('guessInput');
     const guessButton = document.getElementById('guessButton');
     const resetButton = document.getElementById('resetButton');
     const feedback = document.getElementById('feedback');
     const guessesLeftSpan = document.getElementById('guessesLeft');
 
-    // Hubungkan fungsi C++ ke JavaScript
     const startGame = Module.cwrap('startGame', null, ['number']);
     const checkGuess = Module.cwrap('checkGuess', 'number', ['number']);
     const getRemainingGuesses = Module.cwrap('getRemainingGuesses', 'number', []);
