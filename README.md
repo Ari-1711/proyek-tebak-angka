@@ -25,10 +25,12 @@ Git & GitHub: Untuk kontrol versi dan hosting melalui GitHub Pages.
 
 ⚙️ Kompilasi dan Setup Lokal
 Pastikan Emscripten SDK sudah terinstal dan aktif di terminal Anda.
+```bash
 git clone https://github.com/Ari-1711/proyek-tebak-angka.git
 cd proyek-tebak-angka
 emcc src/game.cpp -o game.js -s EXPORTED_FUNCTIONS="['_startGame', '_checkGuess', '_getRemainingGuesses', '_getSecretNumber']" -s EXPORTED_RUNTIME_METHODS="['cwrap']"
 python -m http.server (perlu pyton)
+```
 
 👨‍💻 Pengembang
 **Nama: Ari Hermawan**
