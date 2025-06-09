@@ -1,7 +1,9 @@
-🎮 Game Tebak Angka (C++ & WebAssembly)
+# 🎮 Game Tebak Angka (C++ & WebAssembly)
+
 Aplikasi web game interaktif yang logikanya dibangun dari awal menggunakan C++ dan dikompilasi ke WebAssembly (Wasm). Proyek ini mendemonstrasikan bagaimana bahasa berkinerja tinggi seperti C++ dapat dijalankan di browser untuk menciptakan pengalaman pengguna yang responsif.
 
-🚀 Fitur Utama
+## 🚀 Fitur Utama
+
 🧠 Logika Game di C++ Semua aturan inti permainan—pembuatan angka rahasia, perbandingan tebakan, dan pengelolaan sisa kesempatan—sepenuhnya ditulis dalam C++.
 
 ⚙️ Eksekusi via WebAssembly Kode C++ dikompilasi menjadi modul WebAssembly (Wasm) menggunakan Emscripten, memungkinkan logika game dieksekusi dengan kecepatan mendekati native di dalam browser.
